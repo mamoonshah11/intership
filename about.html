@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFKM's - About Us</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9ff;
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #007bb5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+        .navbar .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .navbar .nav-links a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        /* About Section Styles */
+        .about {
+            padding: 3rem 1.5rem;
+            background-color: #eaf4fc;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            color: #004080;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .about p {
+            margin-bottom: 2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* About Subsections */
+        .about-section {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            max-width: 1000px;
+        }
+        .about-section img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .about-section img:hover {
+            transform: scale(1.05);
+        }
+        .about-text {
+            flex: 1;
+            color: #333;
+        }
+        .about-text h3 {
+            color: #ff6961;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .about-text p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #004080;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-section {
+                flex-direction: column;
+                align-items: center;
+                padding: 1.5rem;
+            }
+            .about-section img {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">NFKM's</a>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="construction.html">Construction</a>
+            <a href="eCommerce.html">eCommerce</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>NFKM's is a trusted company with years of experience in delivering exceptional construction and eCommerce solutions. Our mission is to blend quality and innovation, offering our clients the best in both fields.</p>
+
+        <!-- History Section -->
+        <div class="about-section">
+            <img src="freepik__upload__54295.jpeg" alt="Company History">
+            <div class="about-text">
+                <h3>Our History</h3>
+                <p>Founded in [Year], NFKM's has grown from a small local business to a trusted name in the industry. Our journey reflects our commitment to quality, customer satisfaction, and continuous improvement.</p>
+            </div>
+        </div>
+
+        <!-- Mission Section -->
+        <div class="about-section">
+            <img src="freepik__expand__66823.png" alt="Our Mission">
+            <div class="about-text">
+                <h3>Our Mission</h3>
+                <p>At NFKM's, we strive to build and deliver top-notch services, focusing on quality and customer experience. Our goal is to consistently exceed client expectations and contribute positively to every community we serve.</p>
+            </div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="about-section">
+            <img src="WhatsApp Image 2024-10-27 at 22.31.23_54ab1417.jpg" alt="Our Vision">
+            <div class="about-text">
+                <h3>Our Vision</h3>
+                <p>Our vision is to be a leader in the construction and eCommerce industries, known for integrity, innovation, and exceptional service. We aim to build lasting relationships with our clients through dedication and expertise.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NFKM's. All rights reserved.</p>
+    </footer>
+</body>
+</html>

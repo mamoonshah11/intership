@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFKM's - Construction Projects</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inline CSS for Styling -->
+    <style>
+        body {
+            background-color: #e0f7ff;
+            font-family: Arial, sans-serif;
+        }
+        .navbar-custom {
+            background-color: #007bb5;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+        h1, h2 {
+            color: #007bb5;
+            font-weight: bold;
+        }
+        .section-heading {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .project-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .video-section video {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #007bb5;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .project-gallery img {
+                height: auto;
+            }
+            .video-section video {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="#">NFKM's Construction Projects</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="construction.html">Construction</a></li>
+                <li class="nav-item"><a class="nav-link" href="eCommerce.html">eCommerce</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="container text-center mt-4">
+        <h1 class="section-heading">Our Construction Projects</h1>
+        <p>Explore images and video highlights from our recent construction projects.</p>
+    </header>
+
+    <!-- Construction Images Section -->
+    <section id="images" class="container my-5">
+        <h2 class="section-heading">Construction Image Gallery</h2>
+        <div class="row project-gallery">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400.png?text=Construction+Site+Image+1" alt="Construction Site 1">
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400.png?text=Construction+Site+Image+2" alt="Construction Site 2">
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400.png?text=Construction+Site+Image+3" alt="Construction Site 3">
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400.png?text=Construction+Site+Image+4" alt="Construction Site 4">
+            </div>
+        </div>
+    </section>
+
+    <video width="320" height="240" controls>
+        <source src="vedio.mp4" type="video/mp4">
+        <source src="vedio.mp4" type="video/ogg">
+        Your browser
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NFKM's Construction Projects. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

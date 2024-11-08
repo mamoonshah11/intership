@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFKM's - Comprehensive Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inline CSS for Custom Styling -->
+    <style>
+        /* Custom Styles for Enhanced Look */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7ff;
+        }
+        .navbar-custom {
+            background-color:#007bb5;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+        h1, h2 {
+            color: #007bb5;
+            font-weight: bold;
+        }
+        .section-heading {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .text-muted {
+            color: #6c757d;
+        }
+        .btn-primary-custom {
+            background-color: #007bb5;
+            border: none;
+            color: white;
+        }
+        .btn-primary-custom:hover {
+            background-color: #005f87;
+        }
+        footer {
+            background-color: #007bb5;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        /* Slide Styles for Each Section */
+        .slide-section {
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        .slide-construction { background-color: #cce7f0; }
+        .slide-ecommerce { background-color: #b3e5fc; }
+        .slide-services { background-color: #a0d3e8; }
+        .slide-projects { background-color: #99d2f2; }
+
+        /* Responsive Design */
+        @media (max-width: 576px) {
+            .section-heading {
+                font-size: 1.5rem;
+            }
+            .text-muted {
+                font-size: 0.9rem;
+            }
+            video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (min-width: 577px) and (max-width: 768px) {
+            .section-heading {
+                font-size: 1.8rem;
+            }
+            .text-muted {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .section-heading {
+                font-size: 2rem;
+            }
+            .text-muted {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="#home">NFKM's</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="construction.html">Construction</a></li>
+                <li class="nav-item"><a class="nav-link" href="eCommerce.html">eCommerce</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section with Buttons for Navigation -->
+    <section id="home" class="container my-4 text-center">
+        <h1 class="section-heading">Welcome to NFKM's</h1>
+        <p>Your one-stop solution for construction and eCommerce services.</p>
+        <div class="d-flex justify-content-around mt-4 flex-wrap">
+            <button class="btn btn-primary-custom" onclick="scrollToSection('services')">Our Services</button>
+            <button class="btn btn-primary-custom" onclick="scrollToSection('construction')">Construction</button>
+            <button class="btn btn-primary-custom" onclick="scrollToSection('ecommerce')">eCommerce</button>
+            <button class="btn btn-primary-custom" onclick="scrollToSection('projects')">Our Projects</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container my-4">
+        <h2 class="section-heading">About Us</h2>
+        <p class="text-muted">NFKM's is a pioneering company dedicated to delivering exceptional construction and eCommerce solutions. We are committed to quality, innovation, and unparalleled customer service.</p>
+    </section>
+
+    <!-- Services Slide Section -->
+    <section id="services" class="container my-4 slide-section slide-services">
+        <h2 class="section-heading">Our Services</h2>
+        <p class="text-muted">From groundbreaking construction projects to a comprehensive online shopping experience, NFKM's offers a diverse range of services to meet all your needs.</p>
+        <button class="btn btn-primary-custom" onclick="showAlert('Learn more about our services!')">Learn More</button>
+    </section>
+
+    <!-- Construction Slide Section -->
+    <section id="construction" class="container my-4 slide-section slide-construction">
+        <h2 class="section-heading">Construction Projects</h2>
+        <p class="text-muted">We build with precision and purpose, crafting structures that stand the test of time. Explore our portfolio to witness our commitment to excellence.</p>
+        <button class="btn btn-primary-custom" onclick="showAlert('Explore our construction projects!')">See Projects</button>
+    </section>
+
+    <!-- eCommerce Slide Section -->
+    <section id="ecommerce" class="container my-4 slide-section slide-ecommerce">
+        <h2 class="section-heading">eCommerce Platform</h2>
+        <p class="text-muted">Discover a seamless shopping experience with NFKM's. From electronics to apparel, we bring the latest products right to your doorstep.</p>
+        <button class="btn btn-primary-custom" onclick="showAlert('Start shopping on our eCommerce platform!')">Shop Now</button>
+    </section>
+
+    <!-- Projects Slide Section with Videos -->
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NFKM's. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

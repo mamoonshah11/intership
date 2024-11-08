@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFKM's - Construction Projects</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inline CSS for Custom Styling -->
+    <style>
+        /* Custom Styles for Enhanced Look */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7ff;
+        }
+        .navbar-custom {
+            background-color: #007bb5;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+        h1, h2 {
+            color: #007bb5;
+            font-weight: bold;
+        }
+        .section-heading {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .text-muted {
+            color: #6c757d;
+        }
+        .btn-primary-custom {
+            background-color: #007bb5;
+            border: none;
+            color: white;
+        }
+        .btn-primary-custom:hover {
+            background-color: #005f87;
+        }
+        footer {
+            background-color: #007bb5;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        /* Slide Styles for Each Section */
+        .slide-section {
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        .slide-construction { background-color: #cce7f0; }
+        .info-container { background-color: #b3e5fc; padding: 1.5rem; border-radius: 10px; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="index.html">NFKM's</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="construction.html">Construction</a></li>
+                <li class="nav-item"><a class="nav-link" href="eCommerce.html">eCommerce</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Construction Section -->
+    <section id="construction" class="container my-4 slide-section slide-construction">
+        <h2 class="section-heading">Construction Projects</h2>
+        <p class="text-muted">We build with precision and purpose, crafting structures that stand the test of time. Explore our portfolio to witness our commitment to excellence.</p>
+        <button class="btn btn-primary-custom" onclick="showAlert('Explore our construction projects!')">See Projects</button>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <img src="con 1 (1).jpeg" alt="Construction Process" width="100%">
+                <p class="text-muted"></p>
+            </div>
+            <div class="col-md-4">
+                <img src="con 1 (2).jpeg" alt="Innovative Solutions" width="100%">
+                <p class="text-muted"></p>
+            </div>
+            <div class="col-md-4">
+                <img src="con 1 (3).jpeg" alt="Quality Assurance" width="100%">
+                <p class="text-muted"></p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Office Location -->
+    <section class="container my-4 info-container">
+        <h2 class="section-heading">Our Office Location</h2>
+        <p class="text-muted">You can find us at:</p>
+        <p><strong>University Road, Peshawar</strong></p>
+        <p><strong>Saif Associates, DHA Peshawar</strong></p>
+    </section>
+
+    <!-- Completed and Ongoing Projects -->
+    <section class="container my-4 info-container">
+        <h2 class="section-heading">Completed and Ongoing Projects</h2>
+        <p class="text-muted">We have a range of completed projects and ongoing work in progress:</p>
+        <ul>
+            <li>Residential Plazas</li>
+            <li>Commercial Offices</li>
+            <li>Shops</li>
+            <li>Clinics</li>
+            <li>Apartments</li>
+        </ul>
+    </section>
+
+    <!-- Available Properties -->
+    <section class="container my-4 info-container">
+        <h2 class="section-heading">Available Properties in Town</h2>
+        <p class="text-muted">We have the following properties available for sale or rent:</p>
+        <ul>
+            <li>Residential Apartments</li>
+            <li>Commercial Offices</li>
+            <li>Shops in Busy Areas</li>
+            <li>Clinics</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NFKM's. All rights reserved.</p>
+       
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

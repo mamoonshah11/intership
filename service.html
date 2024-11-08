@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFKM's - Our Services</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f9ff;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #007bb5; /* Sky blue */
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar .logo {
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .navbar .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .navbar .nav-links a:hover {
+            color: #ffcc00; /* Highlight color */
+            transform: scale(1.1);
+        }
+
+        /* Services Section Styles */
+        .services {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            background-color: #eaf4fc; /* Light background */
+        }
+        .services h2 {
+            font-size: 2.5rem;
+            color: #004080; /* Sky blue */
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .services p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .service {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .service-item {
+            width: 280px;
+            background-color: #ffffff; /* White background for service items */
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+        .service-item h3 {
+            color: #ff6961; /* Highlight color */
+            margin-bottom: 0.5rem;
+        }
+        .service-item p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .service-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html" class="logo">NFKM's</a>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="construction.html">Construction</a>
+            <a href="ecommerce.html">eCommerce</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>Explore the range of services NFKM's offers to bring value and innovation to our clients.</p>
+        
+        <div class="service">
+            <div class="service-item">
+                <h3>Construction Services</h3>
+                <p>From residential to commercial projects, we offer comprehensive construction solutions tailored to meet your unique needs with a commitment to quality and safety.</p>
+            </div>
+            <div class="service-item">
+                <h3>eCommerce Solutions</h3>
+                <p>We provide eCommerce platforms that ensure a seamless user experience, robust functionality, and scalability to grow your online business successfully.</p>
+            </div>
+            <div class="service-item">
+                <h3>Consultation</h3>
+                <p>Our expert team offers consultation services to help you make informed decisions that will positively impact your project from inception to completion.</p>
+            </div>
+            <div class="service-item">
+                <h3>Project Management</h3>
+                <p>With a focus on efficiency and transparency, our project management team ensures that every project stays on schedule and within budget.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 NFKM's. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFKM's - eCommerce</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #007bb5; /* Sky blue */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #e18282; /* Hover color */
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            display: flex;
+        }
+
+        /* eCommerce Section */
+        .ecommerce {
+            padding: 2rem;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .ecommerce h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .ecommerce p {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Product Gallery */
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .product-item {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+        .product-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .product-item h3 {
+            font-size: 1.3rem;
+            color: #e18282;
+            margin: 0.5rem;
+        }
+        .product-item p {
+            color: #666;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .buy-now {
+            display: block;
+            background-color: #e18282;
+            color: white;
+            text-align: center;
+            padding: 0.7rem;
+            margin: 0.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .buy-now:hover {
+            background-color: #d15656;
+        }
+
+        /* Additional Sections */
+        .info-container {
+            padding: 2rem;
+            background-color: #b3e5fc; /* Light blue background */
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+        .info-container h2 {
+            margin-bottom: 1rem;
+            color: #007bb5; /* Sky blue */
+        }
+        .info-container p {
+            color: #666;
+            font-size: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .video-section h2 {
+            margin-bottom: 1rem;
+            color: #007bb5; /* Sky blue */
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        video {
+            width: 300px;
+            border-radius: 8px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #007bb5; /* Sky blue */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-item {
+                width: 100%;
+            }
+            video {
+                width: 100%;
+            }
+            .navbar .nav-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">NFKM's</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="construction.html">Construction</a>
+            <a href="eCommerce.html">eCommerce</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- eCommerce Section -->
+    <section id="ecommerce" class="ecommerce">
+        <h2>eCommerce Platform</h2>
+        <p>Explore products available for purchase on our platform, where quality meets affordability.</p>
+
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="PODUCT 1 (9).jpg" alt="Product 1">
+               
+            </div>
+            <div class="product-gallery">
+                <div class="product-item">
+                    <img src="PODUCT 1 (8).jpg" alt="Product 1">
+                   
+                </div>
+            <div class="product-item">
+                <img src= "PODUCT 1 (7).jpg"alt="Product 2">
+    
+             
+            </div>
+            <div class="product-item">
+                <img src="PODUCT 1 (6).jpg" alt="Product 3">
+                
+            </div>
+        </div>
+        <div class="product-item">
+            <img src="PODUCT 1 (12).jpg" alt="Product 3">
+        </div>
+        <div class="product-item">
+            <img src="PODUCT 1 (11).jpg" alt="Product 3">
+            
+        </div>
+            
+        </div> 
+        </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Office Location Section -->
+    <section class="info-container">
+        <h2>Our Office Location</h2>
+        <p>You can find us at:</p>
+        <p><strong>University Road, Peshawar</strong></p>
+        <p><strong>Saif Associates, DHA Peshawar</strong></p>
+    </section>
+
+    <!-- Available Products Section -->
+    <section class="info-container">
+        <h2>Available Products</h2>
+        <p>We have the following products available for sale:</p>
+        <ul>
+            <li>SOHES</li>
+            <li>CLOTHS</li>
+            <li>LOCAL USE PRODUCTS</li>
+            <li> FRAGRANCES </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 NFKM's. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
